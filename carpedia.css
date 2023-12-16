@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.title{
+    font-size: xx-large;
+    padding: 20px 0;
+}
+.listCar .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listCar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.listCar .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listCar .item h2{
+    font-size: large;
+    font-weight: 500;
+}
+.listCar .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+/* detail page */
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    text-align: left;
+}
+.detail .image img{
+    width: 100%;
+}
+.detail .image{
+    position: relative;
+}
+.detail .name{
+    font-size: xxx-large;
+    padding: 40px 0 0 0;
+    margin: 0 0 10px 0;
+}
+.detail .price{
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.detail .content{
+    font-weight: 300;
+}
+/*ipad*/
+@media screen and (max-width:992px) {
+    .listCar{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/* mobile */
+@media screen and (max-width:768px) {
+    .listCar{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .detail{
+        text-align: center;
+    }
+    .detail .img img{
+        width: unset;
+        height: 40vh;
+    }
+    .detail .name{
+        font-size: x-large;
+        margin: 0;
+    }
+}
