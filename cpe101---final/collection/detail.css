@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+    background-color: black;
+    color: white;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+.image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: 80%;
+}
+
+.box{
+    display: flex;
+}
+
+.title p{
+    padding-top: 50px;
+}
+
+.article{
+    margin: 0 50px;
+}
